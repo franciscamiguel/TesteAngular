@@ -1,0 +1,18 @@
+$content-background: #ff7854;
+$content-padding: 20px;
+$content-border-radius: 20px;
+$content-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+$text-color: white;
+$content-background: #ff7854;
+.content {
+  background-color: $content-background;
+  padding: $content-padding;
+  border-radius: $content-border-radius;
+  color: $text-color;
+  box-shadow: $content-box-shadow;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+
+
+}

@@ -1,0 +1,75 @@
+$background-color: #2b2b2b;
+$button-background-gradient-start: #030303;
+$button-background-gradient-end: #080606;
+$button-border-radius: 20px;
+$button-color: white;
+$button-padding: 10px 20px;
+$button-font-size: 16px;
+$button-font-weight: bold;
+$button-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+$button-hover-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+$content-background: #ff7854;
+$content-padding: 20px;
+$content-border-radius: 20px;
+$content-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+$text-color: white;
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: $content-background;
+  border-radius: $content-border-radius;
+  box-shadow: $content-box-shadow;
+  margin: 0 auto;
+  text-align: justify;
+
+}
+
+.contact-form {
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid white;  // Border white
+      border-radius: 20px;  // Rounded borders
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    background: linear-gradient(180deg, $button-background-gradient-start, $button-background-gradient-end);
+    border: none;
+    border-radius: $button-border-radius;
+    color: $button-color;
+    padding: $button-padding;
+    text-align: center;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    cursor: pointer;
+    box-shadow: $button-box-shadow;
+    transition: box-shadow 0.3s ease;
+    margin-top: 10px;
+
+    &:hover {
+      box-shadow: $button-hover-box-shadow;
+    }
+  }
+}
